@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validator</title>
+</head>
+<body>
+
+<h1>Email Validator</h1>
+<form action="checkEmail" method="post" th:object="${email}">
+    <label for="emailAddress">Email Address:</label> <br/>
+    <input type="text" th:field="*{emailAddress}"/> <br/>
+
+    <button type="submit">Check Email</button>
+</form>
+<br/>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Result</title>
+</head>
+<body>
+
+<h1>Email Validation Result</h1>
+
+<p>Email Address: <span th:text="${emailAddress}"></span></p>
+<p>Validity: <span th:text="${isValid} ? 'Valid' : 'Invalid'"></span></p>
+
+</body>
+</html>
